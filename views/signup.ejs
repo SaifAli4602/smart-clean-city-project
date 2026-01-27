@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>>, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <%- include("navbar")%>
+
+    <div class="containers">
+        <!-- <div class="inbox"></div> -->
+
+        <form action="Resistration" method="post">
+        <h1 class="center">CREATE ACCOUNT</h1>
+        <input type="text" placeholder="Your Name" name="yourname" required>
+        <br>
+        <br>
+        <input type="email" placeholder="Your Email" name="username"  required>
+        <br>
+        <br>
+        <input type="password" placeholder="password" name="password"  required>
+         <br>
+        <br>
+       <button class="btn">SIGN UP</button>
+        <BR>
+        <br>
+        <p class="signup">Have already an account?</p>
+         <!-- <a class="btn" href="login.ejs">LOGIN</a> <button class="btn">LOGOUT</button>  -->
+           <a class="btn" href="login.ejs">LOGIN</a> 
+       
+
+        </div>
+        
+        </form>
+     <a class="btn" href="home.ejs">LOGOUT</a> 
+        
+        
+    </div>
+
+   
+    
+
+</body>
+</html>

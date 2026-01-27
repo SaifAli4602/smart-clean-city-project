@@ -1,0 +1,252 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: aquamarine; */
+  background-image: url("https://media.istockphoto.com/id/1461744851/photo/wind-turbine-farm-and-green-leaf-blowin-in-smart-city-renewable-energy-sustainable-and.jpg?s=612x612&w=0&k=20&c=AtJEdXVjzPvflPJ96QWwrpDa8MS0nu9NCTjpaqWf2vE=");
+  /* background-image: url("https://swarajya.gumlet.io/swarajya/2016-03/dbaec370-4ead-4b47-b62b-eeb4f2931156/GettyImages-130778681.jpg?w=1200&h=600&format=jpg"); */
+  background-size: cover;
+  background-attachment: fixed; 
+  filter: brightness(80%);
+  
+ 
+
+}
+
+/* ========= navbar ========       */
+
+nav {
+
+  background: rgb(107, 24, 107);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding-right: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size:20px ;
+}
+
+nav ul li a:hover{
+  color: rgb(108, 7, 108);
+}
+
+
+.logo{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+/*     ==============   home page   ===     */
+
+.hero {
+    /* display: flex; */
+    /* justify-content: center; */
+  text-align: center;
+  padding-top: 175px;
+  /* background: #f4f4f4; */
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(218, 25, 252);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: rgb(60, 56, 65);
+}
+
+p{
+  font-weight: bold;
+  font-size: 30px;
+}
+span{
+  color: #050109;
+  font-size: 80px;
+}
+
+/* Error messages styling */
+.errors {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.errors li {
+  margin-bottom: 5px;
+}
+
+/*   ============  about  page  */
+
+.about{
+  padding: 10px;
+}
+
+    .about h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+        color: black;
+      text-align: center;
+    }
+
+    .about p {
+      line-height: 1.7;
+      /* color: #475569; */
+      color: black;
+      font-size: bold;
+      font-size: 25px;
+      text-align: justify;
+    }
+    .gotonext{
+   
+  float: right;
+  padding: 10px 20px;
+  background: rgb(218, 25, 252);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+    }
+    .gotonext:hover{
+      background: rgb(60, 56, 65);
+    }
+ 
+
+    /*   =======   form ======*/
+
+    .report-form {
+
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+   box-shadow: 0px 10px 20px rgb(67, 69, 67);
+}
+.report-form input, .report-form textarea, .report-form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.report{
+  font-size: 35px;
+  color: black;
+  font-weight: bolder;
+}
+label{
+   font-size: 25px;
+  color: black;
+  font-weight: bolder;
+  
+}
+
+
+/* ========  login ===========*/
+
+
+.container{
+    border: 2px solid rgb(151, 145, 145);
+    width: 40%;
+    text-align: center;
+    /* background-color: rgb(222, 230, 214); */
+    box-shadow: 0px 10px 20px rgb(67, 69, 67);
+ 
+    margin-top: 10%;
+    border-radius: 15px;
+   height: 400px;
+   
+}
+
+.login-logo{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.login-button{
+    color: white;
+    background-color:rgb(218, 25, 252);
+    border-radius: 10px;
+    border: 0;
+    font-size: 25px;
+
+}
+form{
+    margin-top: 10px;
+}
+
+.login-button:hover{
+  background: rgb(60, 56, 65);
+
+}
+
+.logout-button{
+   color: white;
+    background-color:  rgb(218, 25, 252);
+    border-radius: 10px;
+    border: 0;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+.logout-button:hover{
+  background: rgb(60, 56, 65);
+
+}
+
+/*  ========   page 404 found ========*/
+
+h1 {
+  font-size: 50px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
+
+}
+
+/* ========= sign up page  */
+
+.containers{
+    border: 2px solid rgb(219, 202, 202);
+    width: 40%;
+   margin-left: 30%;
+    text-align: center;
+    background-color: rgb(196, 242, 230);
+     box-shadow: 0px 10px 20px rgb(67, 69, 67);
+ 
+    margin-top: 8%;
+    border-radius: 15px;
+   height: 450px; 
+
+  
+}
+
+   
+   
+    /* border-radius: 5px; */
+    /* border: 0; */
+    /* font-size: 20px;
+    text-decoration: none; */
+
+
+

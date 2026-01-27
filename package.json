@@ -1,0 +1,21 @@
+{
+  "name": "ejs-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "express-validator": "^7.3.1",
+    "mongodb": "^6.20.0",
+    "mongoose": "^9.0.0",
+    "multer": "^2.0.2"
+  }
+}

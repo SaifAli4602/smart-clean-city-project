@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <%- include("navbar")%>
+    
+    <center>
+    <div class="container">
+      <br>
+      
+     <span class="login-logo">LOGIN</span>
+      <br>
+      <br>
+      <br>
+    <form action="/loginpage" method="post">
+    <label>User-name</label>
+    <input type="email" placeholder="Enter the email" name="username" required>
+     <br>
+     <br>
+       <label>Password</label>
+     <input type="password" placeholder="Enter the password" name="password" required>
+     <br>
+     <br>
+     <br>
+     <button class="login-button">LOGIN</button>
+     <BR>
+      <br>
+   <!-- <button class="logout-button">LOGOUT</button> -->
+     </form>
+       <a class="logout-button" href="home.ejs">LOGOUT</a>
+
+      <% if (typeof error !== 'undefined' && error) { %>
+        <p class="error"><%= error %></p>
+      <% } %>
+
+     <br>
+    </div>
+    </center>
+
+
+    
+</body>
+</html>

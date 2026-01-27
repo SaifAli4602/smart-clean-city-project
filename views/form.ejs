@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+ <%- include("navbar")%>
+ 
+ 
+
+    <% if (typeof errors !== 'undefined' && errors.length) { %>
+      <ul class="errors">
+        <% errors.forEach(function(e){ %>
+          <li><%= e.msg %></li>
+        <% }) %>
+      </ul>
+    <% } %>
+    
+  <!-- Report Form -->
+  <section class="report-form" >
+  <form  action="submit" method="post" enctype="multipart/form-data">
+    <center class="report">Report Issue</center>
+    <label>User name*</label>
+    <br>
+    <input type="text"  name="user_name" placeholder="Enter the your name" value="<%= old && old.user_name ? old.user_name : '' %>">
+     <br>
+     <br>
+      <label>Contact Nomber*</label>
+      <br>
+    <input type="number" name="contact" placeholder="Enter the your number" value="<%= old && old.contact ? old.contact : '' %>">
+    <br>
+    <br>
+    
+      <label>Address*</label>
+      <br>
+      <input type="text" name="location" placeholder="Enter location" value="<%= old && old.location ? old.location : '' %>">
+    <br>
+    <br>
+      <label>Description*</label>
+      <br>
+      <textarea  name="description" placeholder="Describe the issue" ><%= old && old.description ? old.description : '' %></textarea>
+      <br>
+      <br>
+      <label>Upload Photo*</label>
+      <br>
+      <input type="file" name="UploadPhoto">
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+
+
+  </section>
+    
+</body>
+</html>
