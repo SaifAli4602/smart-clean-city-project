@@ -11,8 +11,8 @@ import session from 'express-session';
 const app = express();
 
 const publicPath = path.resolve('public');
-
 app.use(express.static(publicPath));
+
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 
