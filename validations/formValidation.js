@@ -5,7 +5,7 @@ import { body } from "express-validator";
     body('user_name')
         .notEmpty()
         .withMessage('User name is required')
-        .isLength({ min: 5 })
+        .isLength({ min: 1 })
         .withMessage('User name must be at least 5 characters long')
         .matches(/^[a-zA-Z\s]+$/)
         .withMessage('User name must contain only letters and spaces'),
