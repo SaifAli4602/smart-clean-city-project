@@ -22,6 +22,6 @@ import { body } from "express-validator";
     body('description')
         .notEmpty()
         .withMessage('Description is required')
-        .matches(/^[a-zA-Z\s]+$/)
-        .withMessage('Description must contain only letters and spaces'),
+        // .matches(/^[a-zA-Z\s]+$/)
+        // .withMessage('Description must contain only letters and spaces'),
 ];
