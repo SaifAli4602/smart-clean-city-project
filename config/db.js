@@ -1,12 +1,8 @@
 import { MongoClient } from 'mongodb';
 
-
-
 const dbName = 'clean';
-const collectionName = 'city';
-const usersCollectionName = 'users';
-const url = 'mongodb://localhost:27017';
-const client = new MongoClient(url);
+
+const client = new MongoClient(process.env.MONGODB_URL);
 
 export const connection = async () => {
     const c = await client.connect();
